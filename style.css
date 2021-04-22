@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono',monospace;
+  background-color: rgb(0 0 0);
+  background-image: url("https://image.freepik.com/fotos-gratis/textura-preta-para-o-fundo_1160-614.jpg");
+}
+
+.clear {
+  clear: both;
+}
+
+/* header */
+header {
+  padding: 20px;
+  width: 100%;
+  min-width: 320px;
+  height: 100px;
+  background-image: url("https://somos.lojaiplace.com.br/wp-content/uploads/2020/01/cinema-CRED-iStock_Roman-Valiev.jpg");
+  background-position: center;
+  
+}
+
+/* header .logo-container */
+.logo-container p,
+.logo-container span {
+  font-size: 36px;
+  font-weight: bold;
+}
+.logo {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.logo span {
+  color: red;
+}
+/* -end- header .logo-container */
+
+/* alura logo */
+.alura-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right:10px;
+}
+/* -end- alura logo */
+/* -end- header */
+
+/* main */
+main {
+  padding: 30px 40px;
+  color: white;
+}
+/* main: #movies-container */
+main #movies-container {
+  width: 100%;
+  display: block;
+}
+
+main #movies-container .movie {
+  width: 23%;
+  height: 420px;
+  
+  margin: 1%;
+  padding: 0 8px;
+  text-align: center;
+  border: 1px solid black;
+  background-color: rgb(28 28 28);
+  border-radius: 5px;
+  float: left;
+  cursor: pointer;
+}
+
+main #movies-container .movie img {
+  margin-top: 10px;
+}
+
+main #movies-container .movie p {
+  margin: 10px 0;
+}
+
+main #movies-container .movie p:first-of-type{
+  font-size: 1.1em;
+}
+/* -end- main: #movies-container */
+
+/* movie-trailer-container */
+main #movie-trailer-container {
+  width: 100%;
+  text-align: center;
+  display:none;
+}
+
+/* movie-trailer-container #movie-trailer */
+main #movie-trailer-container #movie-trailer {
+  display: none;
+  width: 570px;
+  height: 325px;
+  padding: 3px;
+  background-color: rgb(40,40,40);
+  margin: 120px auto;
+}
+
+main #movie-trailer-container #movie-trailer iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* -end- movie-trailer-container #movie-trailer */
+
+/* main #movie-trailer-container #back-page-button */
+main #movie-trailer-container #back-page-button {
+  width: 120px;
+  height: 40px;
+  background-color: red;
+  border-radius: 15px;
+  border: 1px solid black;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+main #movie-trailer-container #back-page-button p {
+  margin: 8px 0;
+}
+/* -end- main #movie-trailer-container #back-page-button */
+/* -end- movie-trailer-container */
+/* -end- main */
+
+/* responsive */
+@media screen and (max-width: 1100px) {
+  /* main */
+  main {
+    padding: 20px 30px;
+  }
+  
+  /* main #movies-container */
+  main #movies-container .movie {
+    width: calc(33% - 2%);
+  }
+  /* -end- main #movies-container */
+  /* -end- main */
+}
+
+@media screen and (max-width: 800px) {
+  /* main */
+  main {
+    padding: 10px 15px;
+  }
+  
+  /* main #movies-container */
+  main #movies-container .movie {
+    width: calc(50% - 2%);
+  }
+  /* -end- main #movies-container */
+  /* -end- main */
+}
+
+@media screen and (max-width: 600px) {
+  /* main */
+  main {
+    padding: 0;
+  }
+  
+  /* main #movies-container */
+   main #movies-container .movie {
+    width: calc(100% - 2%);
+  }
+  /* -end- main #movies-container */
+  
+  /* main #movie-trailer-container */
+  main #movie-trailer-container #movie-trailer {
+    width: 100%;
+    height: 55vw;
+  }
+  /* -end- main #movie-trailer-container */
+  /* -end- main */
+}
+/* -end- responsive */
